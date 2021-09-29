@@ -1,0 +1,180 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#headerCont{
+    display: block;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/vnit2.jpg);
+    /* opacity: 0.9; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hDiv{
+    z-index: 1;
+    color: white;
+    /* border: 2px solid rgb(157, 184, 37); */
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Roboto Slab', serif;
+}
+#instructor{
+    height: 100px;
+    width: 100px;
+    margin: auto ;
+    margin-top: 350px;
+}
+#instructor img{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 100px;
+    width: 100px;
+}
+#profile{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    columns: rgb(51, 51, 51);
+}
+#author{
+    font-weight: bold;
+    font-style: normal;
+}
+#date{
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #e6e6e6;
+}
+#labDetails{
+    /* border: 4px solid gold; */
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: auto 40px 66.67% auto;
+    grid-template-rows: aut auto auto;
+    height: 100%;
+}
+/*  grid view: 
+    ----------------------------
+    |   | 40px | 66.67%    |   |
+    ----- 40px |----------------
+    |   | 40px | 66.67%    |   |
+    ----- 40px |----------------
+    |   | 40px | 66.67%    |   |
+    --------------------------- */
+.col2{
+    grid-row: 1/span 3;
+    grid-column: 2/span 1;
+    /* background-color: rgb(177, 248, 156); */
+}
+
+.col1Row1{
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+}
+.col1Row2{
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+}
+.col1Row3{
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+}
+
+.col3Row1{
+    top: 0;
+    grid-row: 1/span 1;
+    grid-column: 3/span 1;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.col3Row2{
+    grid-row: 2/span 1;
+    grid-column: 3/span 1;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+.col3Row3{
+    grid-row: 3/span 1;
+    grid-column: 3/span 1;  
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red;  */
+}
+
+p{
+    margin: 0;
+}
+.P1{
+    /* background-color: rgb(131, 195, 248); */
+    height: 60px;
+}
+.P3{
+    /* background-color: rgb(238, 133, 156); */
+    height: 20px;
+}
+.p4, .p6{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+}
+.P9{
+    /* background-color: rgb(238, 190, 253); */
+    height: 60px;
+}
+
+.para1, .col1Row1, .col1Row2, .col1Row3{
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    font-family: 'Roboto Slab', serif;
+}
+a{
+    color: #42b4d6;
+    font-size: 24px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.col1Row1, .col1Row2, .col1Row3{
+    margin-top: 60px;
+    color: rgba(0, 0, 0, 0.25);
+    text-align: right;
+}
+.bckimg1{
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/cs1.png);
+}
+.bckimg2{
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/autocad.jpg);
+}
+.bckimg3{
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(images/RsAndGis2.jpg);
+}
+.bckimg1, .bckimg2, .bckimg3{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+/* .foot{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.foot span{
+    margin: auto;
+} */
